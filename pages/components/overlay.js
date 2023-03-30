@@ -1,5 +1,5 @@
 import Image from "next/image";
-export function Overlay({show, setShow, cardSelected}) {
+export default function Overlay({show, setShow, cardSelected}) {
   const cards = {
     card_1: {background: 'bg-gradient-to-r to-yellow-600 from-red-900', textColor:'', title: 'Propseridad y Riqueza'},
     card_2: {background: 'bg-red-700', textColor:'', title: 'Fama y Reputación'},
@@ -32,6 +32,24 @@ export function Overlay({show, setShow, cardSelected}) {
               <Image className="rounded-lg m-1 hover:scale-150" width={320} height={220} src='/images/card_1/ranch2.jpg' alt="ranch"/>
               <Image className="rounded-lg m-1 hover:scale-150" width={320} height={220} src='/images/card_1/investing.jpg' alt="inversion"/>
               <Image className="rounded-lg m-1 hover:scale-150" width={320} height={220} src='/images/card_1/volkswagen-camper.jpg' alt="ranch"/>
+            </>
+          }
+          {
+            cardSelected === 'card_7' &&
+            <>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220}  src='/images/card_7/book1.jpg' alt="book"/>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220} src='/images/card_7/Book2.jpg' alt="book"/>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220} src='/images/card_7/Book3.jpg' alt="book"/>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220} src='/images/card_7/barista.jpg' alt="book"/>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220} src='/images/card_7/english.png' alt="book"/>
+            </>
+          }
+          {
+            cardSelected === 'card_8' &&
+            <>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220}  src='/images/card_8/az.jpeg' alt="book"/>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220} src='/images/card_8/startups.jpeg' alt="book"/>
+              <Image className="rounded-lg m-1 hover:scale-150" width={220} height={220} src='/images/card_8/ayub.jpeg' alt="book"/>
             </>
           }
         </div>
