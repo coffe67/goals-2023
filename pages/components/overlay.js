@@ -62,7 +62,7 @@ export default function Overlay({show, setShow, cardSelected}) {
             <div  className="flex flex-col mt-[130vh] lg:mt-[45vh]">
               <div className="flex w-full justify-center">
                 <h2 className="text-2xl font-bold text-center">
-                  "Vida solo hay una y no creo qué sea para morir de miedo."
+                  Vida solo hay una y no creo que sea para morir de miedo.
                 </h2>
               </div>
               <div className="flex flex-col lg:flex-row w-full justify-between">
